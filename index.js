@@ -40,7 +40,7 @@ const replaceTemplate = (temp, product) => {
 }
 
 const server = http.createServer((request, response) => {
-    const fullUrl = url.parse('http://localhost' + request.url);
+    const fullUrl = url.parse(`http://${HOSTNAME}${request.url}`);
     const query = querystring.parse(fullUrl.query);
     const pathName = fullUrl.pathname;
 
