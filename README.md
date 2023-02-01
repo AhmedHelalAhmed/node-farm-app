@@ -10,4 +10,4 @@ Node.js (v18.13.0)
 - [First Product details](http://localhost:8000/products?id=0)
 
 ## To run
-``` node index.js ```
+``` npm run start ```
